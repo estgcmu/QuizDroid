@@ -25,15 +25,40 @@
         android:textAlignment="center" />
 
     <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="400dp"
+        android:layout_height="100dp"
         app:srcCompat="@drawable/botao"
         android:id="@+id/imageButton6"
         android:scaleType="fitCenter"
         android:background="@null"
-        android:layout_marginTop="33dp"
-        android:layout_alignParentTop="true"
+        android:onClick="alertaNormal"
+        android:layout_below="@+id/textView"
         android:layout_alignParentStart="true"
-        android:onClick="alertaNormal"/>
+        android:layout_marginTop="18dp" />
+
+    <TextView
+        android:text="A:"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/textViewa"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="36sp"
+        android:layout_marginStart="31dp"
+        android:layout_alignTop="@+id/imageButton6"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:text="Dormir"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:textColor="?attr/colorBackgroundFloating"
+        android:id="@+id/textView2"
+        android:typeface="normal"
+        android:gravity="center_vertical"
+        android:textSize="26sp"
+        android:layout_alignTop="@+id/imageButton6"
+        android:layout_toEndOf="@+id/textViewa"
+        android:layout_alignBottom="@+id/imageButton6" />
 
 </RelativeLayout>

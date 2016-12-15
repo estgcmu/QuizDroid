@@ -12,23 +12,49 @@
     tools:context="com.example.joaosoares.quizdroid.MainActivity"
     android:background="@color/colorPrimaryDark">
 
+    //botao perfil
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/botao_perfil"
+        android:id="@+id/perfil_home"
+        android:scaleType="fitCenter"
+        android:background="@null"
+        android:layout_alignTop="@+id/raking_home"
+        android:layout_alignParentEnd="true" />
+    //botao NOVO JOGO
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/botao_novo_jogo"
+        android:id="@+id/novo_jogo_home"
+        android:scaleType="fitCenter"
+        android:background="@null"
+        android:layout_above="@+id/raking_home"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="17dp"
+        android:onClick="pergunta"/>
+    //logo
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/logo"
         android:id="@+id/imageView"
+        android:contentDescription="Logotipo"
+        android:layout_above="@+id/novo_jogo_home"
         android:layout_alignParentStart="true"
-        android:layout_above="@+id/jogar_home"
-        android:contentDescription="Logotipo" />
-
-    <Button
-        android:text="NOVO JOGO"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/jogar_home"
-        android:layout_marginBottom="87dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
         android:onClick="alertaNormal"/>
+    //botao raking
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/botao_raking"
+        android:id="@+id/raking_home"
+        android:scaleType="fitCenter"
+        android:background="@null"
+        android:layout_marginBottom="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+
 </RelativeLayout>
