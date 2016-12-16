@@ -23,18 +23,8 @@
         android:layout_alignTop="@+id/raking_home"
         android:layout_alignParentEnd="true" />
     //botao NOVO JOGO
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="100dp"
-        app:srcCompat="@drawable/botao_novo_jogo"
-        android:id="@+id/novo_jogo_home"
-        android:scaleType="fitCenter"
-        android:background="@null"
-        android:layout_above="@+id/raking_home"
-        android:layout_alignParentEnd="true"
-        android:layout_marginBottom="17dp"
-        android:onClick="perguntav"/>
     //logo
+
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -56,5 +46,15 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true" />
 
-
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/botao_novo_jogo"
+        android:id="@+id/novo_jogo_home"
+        android:scaleType="fitCenter"
+        android:background="@null"
+        android:layout_marginBottom="17dp"
+        android:onClick="sendMessage"
+        android:layout_above="@+id/perfil_home"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>
