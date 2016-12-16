@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     }
     //iniciar nova activity
     public void pergunta(View view) {
-        Intent i = new Intent(this, pergunta.class);
+        Intent i = new Intent(this, Pergunta_activity.class);
         startActivity(i);
 
         }

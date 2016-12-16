@@ -33,7 +33,7 @@
         android:layout_above="@+id/raking_home"
         android:layout_alignParentEnd="true"
         android:layout_marginBottom="17dp"
-        android:onClick="pergunta"/>
+        android:onClick="perguntav"/>
     //logo
     <ImageView
         android:layout_width="wrap_content"
